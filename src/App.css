@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+.text-gradient{
+  background: linear-gradient(45deg, blue,red);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+
+}
+.bg-gradient{
+  background: linear-gradient(45deg, blue,red);
+}
+.components-container{
+  margin: 60px auto 0 auto;
+}
