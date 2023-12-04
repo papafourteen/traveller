@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import { Background } from './components/Background'
 import { Routes } from 'react-router-dom'
 import { Route } from 'react-router-dom'
@@ -16,7 +16,7 @@ function App() {
   
 
   return (
-   <BrowserRouter>
+   <HashRouter basename='/'>
    <div className="content">
     <Background />
     <Navbar />
@@ -30,7 +30,7 @@ function App() {
     <Route path='contact' element={<Contact />}/>
     </Route>
    </Routes>
-   </BrowserRouter>
+   </HashRouter>
   )
 }
 
